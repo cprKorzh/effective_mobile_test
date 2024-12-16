@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "95d3b103-4d6a-4eda-919e-7353d978d2ff",
+		"name": "em_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34092039"
+	},
+	"item": [
+		{
+			"name": "Создание товара",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plu\": 102,\r\n    \"productName\": \"apple-sadovie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/create-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"create-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение товара",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/gain-product?name=apple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"gain-product"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "apple"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание остатка",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plu\": 102,\r\n    \"storeId\": 2,\r\n    \"quantityShop\": 20,\r\n    \"quantityStock\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/create-stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"create-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Увеличение остатка",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stockId\": 3,\r\n    \"quantity\": 100,\r\n    \"place\": \"order\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/increase-stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"increase-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Уменьшение остатка",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stockId\": 3,\r\n    \"quantity\": 1,\r\n    \"place\": \"order\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/decrease-stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"decrease-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получение по фильтрам",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"stockId\": 3,\r\n    \"quantity\": 1,\r\n    \"place\": \"order\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/get-stocks?plu=101&storeId=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get-stocks"
+					],
+					"query": [
+						{
+							"key": "plu",
+							"value": "101"
+						},
+						{
+							"key": "storeId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

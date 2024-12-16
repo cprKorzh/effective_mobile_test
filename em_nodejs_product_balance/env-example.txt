@@ -1,0 +1,9 @@
+# Addresses
+LOCAL_PORT=5000
+
+# Data base
+DB_USER=<db_user_name>
+DB_HOST=<db_address>
+DB_NAME=<db_name>
+DB_PASSWORD=<db_password>
+DB_PORT=<db_port>
