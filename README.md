@@ -1,5 +1,5 @@
 # Effective Mobile Test
-### This is set tasks for checking employer my skills on NodeJS and nestjs.
+### This is set tasks for checking employer my skills on NodeJS and Express.
 
 ## Dear Effective Mobile
 Thank you for the opportunity to work on this test assignment 🙏. Unfortunately, I couldn’t complete it in full due to my university exams session 📚. However, I made sure the submitted work is accurate and well-structured ✍️, and I hope you’ll appreciate the quality of the material 😊.
