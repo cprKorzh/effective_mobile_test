@@ -4,6 +4,14 @@
 ## Dear Effective Mobile
 Thank you for the opportunity to work on this test assignment 🙏. Unfortunately, I couldn’t complete it in full due to my university exams session 📚. However, I made sure the submitted work is accurate and well-structured ✍️, and I hope you’ll appreciate the quality of the material 😊.
 
+Thank you for your understanding, and I look forward to your feedback!
+
+# Database Schema
+
+Below is the schema of the database used in these projects:
+
+![Database Schema](./assets/schema-product-balance.png)
+
 # API Documentation
 
 ## General Information
